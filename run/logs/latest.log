@@ -1,0 +1,158 @@
+[16Jun2020 09:01:23.882] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20200515.085601, --fml.mcVersion, 1.15.2, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 31.2.0, --version, MOD_DEV, --assetIndex, 1.15, --assetsDir, C:\Users\lenovo\.gradle\caches\forge_gradle\assets, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[16Jun2020 09:01:23.904] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 5.1.0+69+master.79f13f7 starting: java version 14.0.1 by Oracle Corporation
+[16Jun2020 09:01:24.383] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[16Jun2020 09:01:25.593] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[16Jun2020 09:01:26.228] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\lenovo\.gradle\caches\forge_gradle\assets, --assetIndex, 1.15, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[16Jun2020 09:01:30.079] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[16Jun2020 09:01:46.752] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[16Jun2020 09:01:48.791] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 31.2.0, for MC 1.15.2 with MCP 20200515.085601
+[16Jun2020 09:01:48.792] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v31.2.0 Initialized
+[16Jun2020 09:01:54.117] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[16Jun2020 09:01:54.292] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[16Jun2020 09:01:54.484] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [helpmeplease] Starting version check at http://myurl.me/
+[16Jun2020 09:01:54.723] [Render thread/INFO] [STDOUT/]: [net.minecraft.crash.CrashReport:makeCategoryDepth:234]: Negative index in crash report handler (12/15)
+[16Jun2020 09:01:54.964] [Render thread/INFO] [STDOUT/]: [net.minecraft.crash.CrashReport:makeCategoryDepth:234]: Negative index in crash report handler (12/18)
+[16Jun2020 09:01:55.100] [Render thread/FATAL] [net.minecraft.client.Minecraft/]: Reported exception thrown!
+net.minecraft.crash.ReportedException: Rendering overlay
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:488) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:961) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?]
+	at net.minecraft.client.Minecraft.run(Minecraft.java:558) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?]
+	at net.minecraft.client.main.Main.main(Main.java:177) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55) ~[forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-5.1.0.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-5.1.0.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-5.1.0.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81) [modlauncher-5.1.0.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65) [modlauncher-5.1.0.jar:?]
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102) [forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar:?]
+Caused by: net.minecraft.util.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: Help:sounds.json
+	at net.minecraft.util.ResourceLocation.<init>(ResourceLocation.java:28) ~[?:?]
+	at net.minecraft.util.ResourceLocation.<init>(ResourceLocation.java:39) ~[?:?]
+	at net.minecraft.client.audio.SoundHandler.prepare(SoundHandler.java:71) ~[?:?]
+	at net.minecraft.client.audio.SoundHandler.prepare(SoundHandler.java:35) ~[?:?]
+	at net.minecraft.client.resources.ReloadListener.lambda$reload$0(ReloadListener.java:12) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764) ~[?:?]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) ~[?:?]
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) ~[?:?]
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) ~[?:?]
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?]
+[16Jun2020 09:01:55.110] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.IOException: Server returned HTTP response code: 400 for URL: http://myurl.me/
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1977) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1972) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:554) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1971) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1539) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1523) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:189) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:206) ~[?:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:157) [?:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 400 for URL: http://myurl.me/
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1927) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1523) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlStream(VersionChecker.java:173) ~[?:?]
+	... 3 more
+[16Jun2020 09:01:55.115] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[16Jun2020 09:01:55.115] [Render thread/INFO] [STDOUT/]: [net.minecraft.util.registry.Bootstrap:printToSYSOUT:110]: ---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 6/16/20, 9:01 AM
+Description: Rendering overlay
+
+net.minecraft.util.ResourceLocationException: Non [a-z0-9_.-] character in namespace of location: Help:sounds.json
+	at net.minecraft.util.ResourceLocation.<init>(ResourceLocation.java:28) ~[?:?] {re:classloading}
+	at net.minecraft.util.ResourceLocation.<init>(ResourceLocation.java:39) ~[?:?] {re:classloading}
+	at net.minecraft.client.audio.SoundHandler.prepare(SoundHandler.java:71) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.audio.SoundHandler.prepare(SoundHandler.java:35) ~[?:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.resources.ReloadListener.lambda$reload$0(ReloadListener.java:12) ~[?:?] {re:classloading}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1764) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1756) ~[?:?] {}
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) ~[?:?] {}
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) ~[?:?] {}
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:484)
+
+-- Overlay render details --
+Details:
+	Overlay name: net.minecraft.client.gui.ResourceLoadProgressGui
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.updateCameraAndRender(GameRenderer.java:484)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:961)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:558)
+	at net.minecraft.client.main.Main.main(Main.java:177)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.minecraftforge.userdev.FMLUserdevClientLaunchProvider.lambda$launchService$0(FMLUserdevClientLaunchProvider.java:55)
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54)
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72)
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:81)
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:65)
+	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:102)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.15.2
+	Minecraft Version ID: 1.15.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 14.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 242544912 bytes (231 MB) / 736100352 bytes (702 MB) up to 1996488704 bytes (1904 MB)
+	CPUs: 8
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	ModLauncher: 5.1.0+69+master.79f13f7
+	ModLauncher launch target: fmluserdevclient
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		/eventbus-2.2.0-service.jar eventbus PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar runtime_enum_extender PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar capability_inject_definalize PLUGINSERVICE 
+		/accesstransformers-2.1.1-shadowed.jar accesstransformer PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar runtimedistcleaner PLUGINSERVICE 
+		/forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-launcher.jar fml TRANSFORMATIONSERVICE 
+	FML: 31.2
+	Forge: net.minecraftforge:31.2.0
+	FML Language Providers: 
+		javafml@31.2
+		minecraft@1
+	Mod List: 
+		client-extra.jar Minecraft {minecraft@1.15.2 ENQUEUE_IMC}
+		main Help Me {helpmeplease@NONE ENQUEUE_IMC}
+		forge-1.15.2-31.2.0_mapped_snapshot_20200514-1.15.1-recomp.jar Forge {forge@31.2.0 ENQUEUE_IMC}
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: Intel(R) UHD Graphics 620 GL version 4.6.0 - Build 26.20.100.7262, Intel
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: ~~ERROR~~ NullPointerException: null
+	CPU: 8x Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz
+[16Jun2020 09:01:55.118] [Render thread/INFO] [STDOUT/]: [net.minecraft.util.registry.Bootstrap:printToSYSOUT:110]: #@!@# Game crashed! Crash report saved to: #@!@# C:\Users\lenovo\Desktop\Dumb Minecraft Mods\Help\run\.\crash-reports\crash-2020-06-16_09.01.55-client.txt

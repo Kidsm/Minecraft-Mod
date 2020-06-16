@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "help:block/rotem_block" }
+  }
+}
