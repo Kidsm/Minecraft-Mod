@@ -54,7 +54,7 @@ public class Help
     public static final ItemGroup TAB = new ItemGroup("RotemsTab") {
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(/*RegistryHandler.ROTEM_BLOCK.get()*/ Items.PUMPKIN);
+            return new ItemStack(RegistryHandler.ROTEM_BLOCK.get());
         }
     };
 }
